@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head tag -->
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  
+  <title>css - MAKE THE WORLD A BETTER PLACE</title>
+
+  <!--Favicon-->
+  <link rel="icon" href="favicon/favicon.ico">
+
+  <!--Description-->
+  
+      <meta name="description" content="flex
+Definition and Usage
+The flex property specifies the length of the item, relative to the rest of the flexible items inside the same container.The">
+  
+
+  <!--Author-->
+  
+      <meta name="author" content="Jueeun Lee">
+  
+
+  <!-- Pure CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans:300,800" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Analytics -->
+  
+
+</head>
+
+
+  <body>
+  	<div class="container-fluid navbar-container m-sm-5">
+      <!-- Header -->
+      <nav class="navbar navbar-toggleable-sm navbar-light px-1 py-3 my-3 mb-sm-5">
+  <a class="navbar-brand ml-2" href="/">MAKE THE WORLD A BETTER PLACE</a>
+  <button class="navbar-toggler navbar-toggler-right py-2" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse text-center" id="navbarCollapse">
+    <ul class="navbar-nav ml-auto my-auto">
+      
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+      
+        <li class="nav-item">
+          <a class="nav-link" href="/link">Link</a>
+        </li>
+      
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/shamaru36/shamaru36.github.io">GitHub</a>
+        </li>
+      
+    </ul>
+    <hr class="hidden-md-up" />
+  </div>
+</nav>
+
+
+  		<div class="row">
+  			<div class="col-lg-4 col-12 pt-3 px-4 pr-lg-5 padding-title post-left">
+  <h5>Wed Dec 20 2017</h5>
+  <h1>css</h1> 
+</div>
+<div class="col-lg-8 col-12 pt-lg-3 mb-4 pl-lg-5 px-lg-0 px-4 portfolio-content post-right">
+  <img class="img-fluid project-img post-cover-img" src="/images/tulip.jpg" alt="css">
+  <br/>
+  <h2 id="flex"><a href="#flex" class="headerlink" title="flex"></a>flex</h2><p><br></p>
+<h5 id="Definition-and-Usage"><a href="#Definition-and-Usage" class="headerlink" title="Definition and Usage"></a>Definition and Usage</h5><blockquote>
+<p>The flex property specifies the length of the item, relative to the rest of the flexible items inside the same container.<br>The flex property is a shorthand for the flex-grow, flex-shrink, and the flex-basis properties.<br><strong>Note</strong>: If the element is not a flexible item, the flex property has no effect.</p>
+<div style="text-align:right;">- <a href="https://www.w3schools.com/cssref/css3_pr_flex.asp" target="_blank" rel="noopener">https://www.w3schools.com/cssref/css3_pr_flex.asp</a></div>
+
+</blockquote>
+<p><br></p>
+<h5 id="Property-Values"><a href="#Property-Values" class="headerlink" title="Property Values"></a>Property Values</h5><table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>flex-grow</td>
+<td>A number specifying how much the item will grow relative to the rest of the flexible items</td>
+</tr>
+<tr>
+<td>flex-shrink</td>
+<td>A number specifying how much the item will shrink relative to the rest of the flexible items</td>
+</tr>
+<tr>
+<td>flex-basis</td>
+<td>The length of the item. Legal values: “auto”, “inherit”, or a number followed by “%”, “px”, “em” or any other length unit</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>Example</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt; </span><br><span class="line">#main &#123;</span><br><span class="line">    display: flex;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">.post-left &#123;</span><br><span class="line">	flex: 0 0 25%;</span><br><span class="line">	max-width:25%;</span><br><span class="line">&#125;</span><br><span class="line">.post-right &#123;</span><br><span class="line">	flex: 0 0 75%;</span><br><span class="line">	max-width:75%;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;div id=&quot;main&quot;&gt;</span><br><span class="line">  &lt;div class=&quot;post-left&quot;&gt;LEFT&lt;/div&gt;</span><br><span class="line">  &lt;div class=&quot;post-right&quot;&gt;RIGHT&lt;/div&gt;  </span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<p>cf. 부트스트랩을 사용할 때에는 flex 속성과 관련하여 max-width에도 주의해야 한다. 모바일에서는 동일한 비율을 적용하지 말아야 할 경우가 생기기 때문인데, 그럴 때는 하단의 @media 속성을 이용하면 된다.</p>
+<p><br></p>
+<h2 id="media"><a href="#media" class="headerlink" title="@media"></a>@media</h2><p><br></p>
+<h5 id="Definition-and-Usage-1"><a href="#Definition-and-Usage-1" class="headerlink" title="Definition and Usage"></a>Definition and Usage</h5><blockquote>
+<p>The @media rule is used to define different style rules for different media types/devices.<br>In CSS2 this was called media types, while in CSS3 it is called media queries.<br>Media queries look at the capability of the device, and can be used to check many things, such as:<br>width and height of the viewport, width and height of the device, orientation (is the tablet/phone in landscape or portrait mode?), resolution and much more</p>
+<div style="text-align:right;">- <a href="https://www.w3schools.com/cssref/css3_pr_mediaquery.asp" target="_blank" rel="noopener">https://www.w3schools.com/cssref/css3_pr_mediaquery.asp</a></div>
+
+</blockquote>
+<p><br></p>
+<h5 id="Media-Types"><a href="#Media-Types" class="headerlink" title="Media Types"></a>Media Types</h5><table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>all</td>
+<td>Used for all media type devices</td>
+</tr>
+<tr>
+<td>print</td>
+<td>Used for printers</td>
+</tr>
+<tr>
+<td>screen</td>
+<td>Used for computer screens, tablets, smart-phones etc.</td>
+</tr>
+<tr>
+<td>speech</td>
+<td>Used for screenreaders that “reads” the page out loud</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>Example<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">@media all and (min-width:768px)&#123;</span><br><span class="line">	.post-left &#123;</span><br><span class="line">		flex: 0 0 25%;</span><br><span class="line">		max-width:25%;</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	.post-right &#123;</span><br><span class="line">		flex: 0 0 75%;</span><br><span class="line">		max-width:75%;</span><br><span class="line">	&#125;	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><br></p>
+<h2 id="line-height"><a href="#line-height" class="headerlink" title="line-height"></a>line-height</h2><p><br></p>
+<h5 id="Definition-and-Usage-2"><a href="#Definition-and-Usage-2" class="headerlink" title="Definition and Usage"></a>Definition and Usage</h5><blockquote>
+<p>The line-height property specifies the line height.</p>
+<div style="text-align:right;">- <a href="https://www.w3schools.com/cssref/pr_dim_line-height.asp" target="_blank" rel="noopener">https://www.w3schools.com/cssref/pr_dim_line-height.asp</a></div>
+
+</blockquote>
+<p><br></p>
+<h5 id="Property-Values-1"><a href="#Property-Values-1" class="headerlink" title="Property Values"></a>Property Values</h5><table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>normal</td>
+<td>A normal line height. This is default</td>
+</tr>
+<tr>
+<td>number</td>
+<td>A number that will be multiplied with the current font size to set the line height</td>
+</tr>
+<tr>
+<td>length</td>
+<td>A fixed line height in px, pt, cm, etc.</td>
+</tr>
+<tr>
+<td>%</td>
+<td>A line height in percent of the current font size</td>
+</tr>
+<tr>
+<td>initial</td>
+<td>Sets this property to its default value. Read about initial</td>
+</tr>
+<tr>
+<td>inherit</td>
+<td>Inherits this property from its parent element. Read about inherit</td>
+</tr>
+</tbody>
+</table>
+<p>cf. hexo theme에 기본적으로 line-height 값이 2로 설정되어 있는 걸 normal로 override했는데, 표에서 IE의 경우에는 가로 스크롤이 발생하지 않는데 Chrome에서는 가로 스크롤이 발생하고 있다.</p>
+
+</div>
+
+
+      </div>
+      
+  	</div>
+
+    <!-- After footer scripts -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+  </body>
+</html>

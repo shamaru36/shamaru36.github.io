@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head tag -->
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Title -->
+  
+  <title>node.js - MAKE THE WORLD A BETTER PLACE</title>
+
+  <!--Favicon-->
+  <link rel="icon" href="favicon/favicon.ico">
+
+  <!--Description-->
+  
+      <meta name="description" content="Node.js. What is Node.js?
+
+Node.js® is a JavaScript runtime built on Chrome’s V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O mod">
+  
+
+  <!--Author-->
+  
+      <meta name="author" content="Jueeun Lee">
+  
+
+  <!-- Pure CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans:300,800" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+
+  <!-- Google Analytics -->
+  
+
+</head>
+
+
+  <body>
+  	<div class="container-fluid navbar-container m-sm-5">
+      <!-- Header -->
+      <nav class="navbar navbar-toggleable-sm navbar-light px-1 py-3 my-3 mb-sm-5">
+  <a class="navbar-brand ml-2" href="/">MAKE THE WORLD A BETTER PLACE</a>
+  <button class="navbar-toggler navbar-toggler-right py-2" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse text-center" id="navbarCollapse">
+    <ul class="navbar-nav ml-auto my-auto">
+      
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+      
+        <li class="nav-item">
+          <a class="nav-link" href="/link">Link</a>
+        </li>
+      
+        <li class="nav-item">
+          <a class="nav-link" href="https://github.com/shamaru36/shamaru36.github.io">GitHub</a>
+        </li>
+      
+    </ul>
+    <hr class="hidden-md-up" />
+  </div>
+</nav>
+
+
+  		<div class="row">
+  			<div class="col-lg-4 col-12 pt-3 px-4 pr-lg-5 padding-title post-left">
+  <h5>Mon Dec 25 2017</h5>
+  <h1>node.js</h1> 
+</div>
+<div class="col-lg-8 col-12 pt-lg-3 mb-4 pl-lg-5 px-lg-0 px-4 portfolio-content post-right">
+  <img class="img-fluid project-img post-cover-img" src="/images/nodejs.png" alt="node.js">
+  <br/>
+  <h3 id="Node-js"><a href="#Node-js" class="headerlink" title="Node.js"></a>Node.js</h3><p>. What is Node.js?</p>
+<blockquote>
+<p>Node.js® is a JavaScript runtime built on Chrome’s V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js’ package ecosystem, npm, is the largest ecosystem of open source libraries in the world.</p>
+<div style="text-align:right;">- <a href="https://nodejs.org" target="_blank" rel="noopener">https://nodejs.org</a></div>
+
+</blockquote>
+<p>Node.js는 오픈소스 서버 프레임워크로 Windows, Linux를 비롯한 다양한 플랫폼에서 동작한다.<br><br><br>. Why Node.js?</p>
+<blockquote>
+<p>Node.js uses asynchronous programming!<br>A common task for a web server can be to open a file on the server and return the content to the client.</p>
+<p>Here is how PHP or ASP handles a file request:<br>(1) Sends the task to the computer’s file system.<br>(2) Waits while the file system opens and reads the file.<br>(3) Returns the content to the client.<br>(4) Ready to handle the next request.</p>
+<p>Here is how Node.js handles a file request:<br>(1) Sends the task to the computer’s file system.<br>(2) Ready to handle the next request.<br>(3) When the file system has opened and read the file, the server returns the content to the client.</p>
+</blockquote>
+<p>Node.js eliminates the waiting, and simply continues with the next request.<br>Node.js runs single-threaded, non-blocking, asynchronously programming, which is very memory efficient.</p>
+<p>예전에 프로젝트할 때는 써야한다고 하니까 썼었는데, 메모리를 정말 효율적으로 사용하는 아이였다. 위에서도 이미 언급되었지만 I/O의 결과를 직접 돌려받는 대신, 콜백 함수의 파라미터로 전달받는다. 다시 말해, 디스크에 결과를 요청하고 기다리는 대신 다른 태스크를 진행하다가 응답 이벤트가 발생하면 태스크의 결과를 처리하는 식인데 이게 정말 엄청난 특징! 왜 채팅 프로그램에서 가장 유용한 아이였는지 이해하게 되었다.</p>
+<p><br></p>
+<h4 id="설치"><a href="#설치" class="headerlink" title="설치"></a>설치</h4><p><a href="https://nodejs.org" target="_blank" rel="noopener">여기</a>에서 다운로드(Window Vista처럼 OS버전이 너무 낮으면 설치할 수 없다…ㅠㅠ)<br><img src="/images/nodeDown.PNG" alt="nodeDown"></p>
+<p><br></p>
+<h4 id="사용"><a href="#사용" class="headerlink" title="사용"></a>사용</h4><p>. var modToLoad = require(‘modName.js’);</p>
+<p> require 함수는 자바스크립트 API의 인터페이스로 해당 모듈의 object를 리턴한다. 여기서 require 안에는 파일의 디렉토리 경로나 파일 이름이 들어갈 수 있으며 Node의 라이브러리가 제공하는 기본 모듈인 HTTP, Crypto, Process, Events, Buffers, File System, Path 등의 모듈은 기본적으로 require 함수로 로드할 수 있다. 기본적인 모듈이 아닌 외부 모듈이라면 NPM(Node Package Manager)으로 다운로드하여 로드할 수 있다.</p>
+<p><br> </p>
+<h4 id="기본-모듈-코어-모듈"><a href="#기본-모듈-코어-모듈" class="headerlink" title="기본 모듈(코어 모듈)"></a>기본 모듈(코어 모듈)</h4><p>. What is a Module in Node.js?</p>
+<blockquote>
+<p>Consider modules to be the same as JavaScript libraries.<br>A set of functions you want to include in your application.</p>
+</blockquote>
+<p>. Built-in Modules</p>
+<p>Node.js has a set of built-in modules which you can use without any further installation.</p>
+<table>
+<thead>
+<tr>
+<th>Module</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>buffer</td>
+<td>To handle binary data</td>
+</tr>
+<tr>
+<td>crypto</td>
+<td>To handle OpenSSL crptographic functions</td>
+</tr>
+<tr>
+<td>events</td>
+<td>To handle events</td>
+</tr>
+<tr>
+<td>fs</td>
+<td>To handle the file system</td>
+</tr>
+<tr>
+<td>http</td>
+<td>To make Node.js act as an HTTP server</td>
+</tr>
+<tr>
+<td>https</td>
+<td>To make Node.js act as an HTTPS server</td>
+</tr>
+<tr>
+<td>os</td>
+<td>Provides information about the operating system</td>
+</tr>
+<tr>
+<td>path</td>
+<td>To handle file paths</td>
+</tr>
+</tbody>
+</table>
+<p><br><br>Example for fs module<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">fs.readFile(&apos;/here&apos;, function(err, data)&#123;</span><br><span class="line">	if(err) throw err;</span><br><span class="line">	console.log(data);</span><br><span class="line"></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
+<p>cf. process.nextTick(callback) : setTimeout은 시스템 상의 시나리오와 관련 없는 idle 타임을 강제로 삽입하는 것이지만,<br>nextTick은 Node.js의 코어단에서 수행되는 이벤트 루프와 행동을 함께 하기 때문에 더욱 효율적이라고.</p>
+<p>cf. socket.io &gt; websocket </p>
+<p><br></p>
+<h3 id="NPM-Node-js-Package-Manager"><a href="#NPM-Node-js-Package-Manager" class="headerlink" title="NPM(Node.js Package Manager)"></a>NPM(Node.js Package Manager)</h3><p>. What is NPM?</p>
+<blockquote>
+<p>NPM is a package manager for Node.js packages, or modules if you like.<br>www.npmjs.com hosts thousands of free packages to download and use.<br>The NPM program is installed on your computer when you install Node.js</p>
+</blockquote>
+<p>. What is a Package?</p>
+<blockquote>
+<p>A package in Node.js contains all the files you need for a module.<br>Modules are JavaScript libraries you can include in your project.</p>
+</blockquote>
+<p>모듈이 Node.js의 기본 모듈 API를 사용하여 만든 라이브러리라면 패키지는 모듈(라이브러리)을 사용하기 위한 물리적인 개념으로 이해할 수 있을 것 같다. 검증된 Third-party Package를 쉽게 다운로드하여 사용할 수 있어 생산성이 큰 장점으로 꼽히며, NPM을 통해 설치된 패키지들은 관리가 수월하다.</p>
+<p>. Download a Package</p>
+<blockquote>
+<p>Open the command line interface and tell NPM to download the package you want.<br>If you want to download a package called “upper-case”:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install upper-case</span><br></pre></td></tr></table></figure></p>
+<p>NPM creates a folder named “node_modules”, where the package will be placed. All packages you install in the future will be placed in this folder.<br>The project now has a folder structure like this: C:\Users\My Name\node_modules\upper-case</p>
+</blockquote>
+<p>일전에 Hexo를 사용하기 위해 “$ npm install hexo-cli -g” 라는 명령어를 사용했었다. </p>
+<p>NPM의 설치 방식은 기본적으로 전역 설치(-g 옵션)와 로컬 설치로 나누어지는데, 이 기준은 NPM을 설치할 때 관련 라이브러리 내용이 디폴트로 저장되는 디렉토리이다.</p>
+<p> - 전역 설치 디렉토리 : /Users/local/lib<br>   cf. nodemon, forever, express, websocket, socket.io 정도는 전역으로 설치하는 것을 권장한다고.<br> - 로컬 설치 디렉토리 : 현재 작업하고 있는 디렉토리 내부의 ‘node_modules’라는 디렉토리  </p>
+<p>. Using a Package</p>
+<blockquote>
+<p>Once the package is installed, it is ready to use.<br>Include the “upper-case” package the same way you include any other module:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">var uc = require(&apos;upper-case&apos;);</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p>사용 방법은 모듈의 사용 방법과 동일하다.</p>
+<p>. Hexo도 모듈의 일종이었던 셈!<br>. Node.js can be used in database applications. Popular databases are MySQL and MongoDB.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install mysql</span><br><span class="line">$ npm install mongodb</span><br></pre></td></tr></table></figure></p>
+<p>. NVM이라는 Node.js Version Manager도 존재한다<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install nvm</span><br></pre></td></tr></table></figure></p>
+<p><br></p>
+<p>[출처]<br>- MVP적 문제 해결을 위한 Node.js 프로그래밍 / 김다니엘<br>- <a href="https://www.w3schools.com/nodejs/nodejs_npm.asp" target="_blank" rel="noopener">https://www.w3schools.com/nodejs/nodejs_npm.asp</a></p>
+
+</div>
+
+
+      </div>
+      
+  	</div>
+
+    <!-- After footer scripts -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+  </body>
+</html>
